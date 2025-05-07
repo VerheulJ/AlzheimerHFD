@@ -7,12 +7,38 @@ This repository contains key data and outputs from a multi-omics study investiga
 To identify network modules linking gut microbial taxa, discriminant metabolites, and protein interaction networks related to AD pathology. The ultimate goal is to reveal novel functional pathways and molecular intermediaries involved in the brain–gut axis modulation of cerebral amyloidosis.
 
 
+
+
+
 Repository Contents
 
 taxonomy260215.qza
-                    Taxonomic classification of ASVs using the classify-sklearn method with the SILVA 138.1 reference database.
+Taxonomic classification of ASVs using the classify-sklearn method with the SILVA 138.1 reference database.
                     
 taxa-bar-plots260215.qzv	
-                    Interactive barplot visualization of taxonomic profiles at all major ranks (phylum to genus).
+Interactive barplot visualization of taxonomic profiles at all major ranks (phylum to genus).
+
 sample-metadata.xlsx	    
-                    Sample metadata with experimental conditions (genotype, diet). Used for barplot grouping and further analysis.
+Sample metadata with experimental conditions (genotype, diet). Used for barplot grouping and further analysis.
+
+run_qiime_taxonomy.sh	
+Bash script to import data, trim primers, denoise with DADA2, and classify ASVs using SILVA 138.1.
+
+
+
+
+
+
+How to run
+Make sure you activate your QIIME2 environment first. Then run:
+bash run_qiime_taxonomy.sh
+
+
+
+
+
+Contact
+
+For questions, please contact:
+Julia Verheul
+📧 julia.verheul@ibima.eu
